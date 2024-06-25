@@ -1,1 +1,43 @@
-
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar ul {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar li {
+    margin-right: 10px;
+}
+.navbar li a {
+    text-decoration: none;
+    color: inherit;
+}
+.half-cylinder {
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    border-bottom-left-radius: 190px;
+    border-bottom-right-radius: 190px;
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('11.png');
+    background-size: 300px 300px; /* Half of the cylinder's width and height */
+    background-position: center;
+    background-repeat: no-repeat;
+}
