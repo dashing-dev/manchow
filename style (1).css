@@ -40,7 +40,7 @@ body {
     padding-right: 0;
 }
 
-.links {
+/* .links {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -62,8 +62,36 @@ body {
     color: inherit;
     font-size: 25px;
     font-weight: 520;
-}
-
+} */
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    position: absolute;
+    top: 5%;
+    left: 76px;
+  }
+  
+  .links li {
+    margin: 0 20px;
+  }
+  
+  .links li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px;
+    font-weight: 520;
+    transition: color 0.3s ease; /* Add a transition for smooth color change */
+  }
+  
+  .links li a:hover {
+    color: red; /* Change the text color to red on hover */
+  }
+  
 .half-cylinder {
     width: 400px;
     height: 500px;
