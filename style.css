@@ -7,38 +7,51 @@ body {
     height: 100vh;
     /* Remove padding to the top of the body */
     padding-right: 20px; /* Add padding to the right of the body */
-  }
+}
 
-  .container {
+.container {
     display: flex;
     flex-direction: column; /* Arrange the elements vertically */
     align-items: center; /* Align items to the center */
     width: 100%; /* Make the container take up the full width */
     position: relative; /* Make the container the reference for absolute positioning */
-  }
+}
 
-  .header {
+.header {
     display: flex;
     justify-content: space-between; /* Distribute the elements horizontally */
     width: 100%; /* Make the header take up the full width */
     align-items: center; /* Align items to the center vertically */
-  }
+}
 
-  .mainlink {
+.mainlink {
     margin: 0; /* Remove default margin */
-    padding: 50px 20px 0 50px; /* Add padding to the left, top, right, and bottom */
+    padding: 0 20px 0 20px; /* Add padding to the left, top, right, and bottom */
     display: flex; /* Use flexbox to align the text */
-    align-items: center;/* Vertically center the text */
-    font-family: myFirstFont;
-    font-size: 40px;
-  }
+    align-items: center; /* Vertically center the text */
+    position: absolute;
+    top: 10%;
+    left: 25px;
+    right: ;
+    bottom: ; margin: 0; /* Remove default margin */
+    padding: 0 20px 0 20px; /* Add padding to the left, top, right, and bottom */
+    display: flex; /* Use flexbox to align the text */
+    align-items: center; /* Vertically center the text */
+    position: absolute;
+    top: 10%;
+    left: 25px;
+    right: ;
+    bottom: ;
+    font-family: OPTIPEKING;
+}
 
-  .mainlink span {
+.mainlink span {
     color: red;
-    padding-right: 20px; /* Add spacing between the "Manchow" and "Wok" text */
-  }
+    padding-right: 0; /* Add spacing between the "Manchow" and "Wok" text */
+    
+}
 
-  .links {
+.links {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,20 +59,25 @@ body {
     justify-content: center; /* Align the links horizontally */
     width: 100%; /* Make the links take up the full width */
     margin-top: 40px; /* Add some space between the header and the links */
-  }
+    position: absolute;
+    top: 5%;
+    left: 76px;
+    right: ;
+    bottom: ;
+}
 
-  .links li {
+.links li {
     margin: 0 20px; /* Add 40px gap between the links */
-  }
+}
 
-  .links li a {
+.links li a {
     text-decoration: none;
     color: inherit;
     font-size: 25px;
     font-weight: 520;
-  }
+}
 
-  .half-cylinder {
+.half-cylinder {
     width: 400px;
     height: 500px;
     background-color: red;
@@ -70,64 +88,119 @@ body {
     align-items: center;
     overflow: hidden;
     background-image: url('11.png');
-    background-size: 300px 300px; /* Adjust size */
+    background-size: 468px 542px; /* Adjust size */
     background-position: center;
     background-repeat: no-repeat;
     position: absolute; /* Position the half-cylinder absolutely */
     right: 0; /* Align it to the right */
     top: 0; /* Adjust the vertical position */
-  }
+}
 
-  .subtitle-container {
-    position: absolute;
-    left: 40px; /* Align it directly to the left edge */
-    top: 150px; /* Adjust the top position as needed */
-    text-align: left; /* Align the subtitle container to the left */
-  }
+.subtitle-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align the subtitle container to the left */
+    margin-top: 80px; /* Add some space between the header and the subtitle */
+}
 
-  .subtitle {
+.subtitle {
     z-index: 1; /* Ensure the subtitle is on top of the half-cylinder */
-    margin-left: 0; /* Remove any left margin */
-    padding-left: 0; /* Remove any left padding */
-    font-family: myFirstFont;
-    font-size: 90px;
-  }
-
-  @font-face {
-    font-family: myFirstFont;
-    src: url(OPTIPeking.otf);
-  }
-
-  .btn-container {
+    text-align: left; /* Align the subtitle text to the left */
+    padding-left: 20px; /* Add some padding to the left */
+}
+h1{
     position: absolute;
-    left: 40px; /* Align it directly to the left edge */
-    top: 250px; /* Adjust the top position as needed */
-    text-align: left; /* Align the button container to the left */
-  }
-
-  .btn {
-    background-color: #e53935; /* Red button color */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+    top: 30%;
+    left: 25px;
+    right: ;
+    bottom: ;
+    font-size: 50px;
+    font-family: OPTIPEKING;
+    letter-spacing: 5px;
+}
+button
+{
+    position: absolute;
+    top: 55%;
+    left: 25px;
+    right: ;
+    bottom: ;
+    background-color: #fc0e0e; /* Green */
+  border-radius: 12px;
+  
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  text-shadow: #464646;
+  
+}
+button a{
+    color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0 8px #c62828; /* Darker red for shadow */
-    transition: all 0.2s ease-in-out; /* Smooth transition */
-    height: 40px;
-  }
+}
+.cylinder{
+    width: 300px;
+    height: 300px;
+    background-color: #fc0e0e;
+    border-top-left-radius: 190px;
+    border-top-right-radius: 190px;
+    position: absolute;
+    top: 80%;
+    left: 80px;
+    right: ;
+    bottom: ;
+}
+.cylinder1{
+    width: 300px;
+    height: 300px;
+    background-color: #fc0e0e;
+    border-top-left-radius: 190px;
+    border-top-right-radius: 190px;
+    position: absolute;
+    top: 80%;
+    left: 500px;
+    right: ;
+    bottom: ;
+}
+.cylinder2{
+    width: 300px;
+    height: 300px;
+    background-color: #fc0e0e;
+    border-top-left-radius: 190px;
+    border-top-right-radius: 190px;
+    position: absolute;
+    top: 80%;
+    left: ;
+    right: 100px;
+    bottom: ;
+}
+.prawn img{
+    width: 328px;
+    height: 200px;
+    position: absolute;
+    top: 85%;
+    left: 505px;
+    right: px;
+    bottom: ;
+}
+.roll img{
+    width: 280px;
+    height: 160px;
+    position: absolute;
+    top: 87%;
+    left: 87px;
+    right: px;
+    bottom: ;
+}
+.momo img{
+    width: 280px;
+    height: 160px;
+    position: absolute;
+    top: 88%;
+    left: px;
+    right: 107px;
+    bottom: ;
+}
 
-  .btn:hover {
-    background-color: #c62828; /* Darker red on hover */
-  }
-
-  .btn:active {
-    background-color: #c62828;
-    box-shadow: 0 5px #c62828; /* Reduce shadow on press */
-    transform: translateY(4px); /* Move button down 4px on press */
-  }

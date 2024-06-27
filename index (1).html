@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Beside Half Cylinder</title>
+    <link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="header">
+            <h1 class="mainlink"><span style="color: red; float: left ; padding-right: 20px;">Manchow </span>Wok</h1>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="half-cylinder"></div>
+        
+    </div>
+    <h1>THE ULTIMATE<br>CHINESE TASTE </h1>
+    <button class="btn"><a href="menu.html" target="_blank">Menu</a></button>
+    <div class="cylinder"></div>
+    <div class="cylinder1"></div>
+    <div class="cylinder2"></div>
+    <div class="prawn">
+        <img src="rice.png">
+    </div>
+    <div class="roll">
+        <img src="pngwing.com (1).png">
+    </div>
+    <div class="momo">
+        <img src="pngwing.com (2).png">
+    </div>
+
+    <div class="card-container">
+        <div class="card-row">
+          <div class="card card1">
+            <div class="card-image">
+              <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="card-content">
+              <h3>Card 1</h3>
+              <p>location 1 </p>
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="card-image">
+              <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="card-content">
+              <h3>Card 2</h3>
+              <p>location2</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-row">
+          <div class="card card3">
+            <div class="card-image">
+              <img src="image3.jpg" alt="Image 3">
+            </div>
+            <div class="card-content">
+              <h3>Card 3</h3>
+              <p>location3</p>
+            </div>
+          </div>
+          <div class="card card4">
+            <div class="card-image">
+              <img src="image4.jpg" alt="Image 4">
+            </div>
+            <div class="card-content">
+              <h3>Card 4</h3>
+              <p>location4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+    const cards = document.querySelectorAll('.card');
+
+    function observeCards() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            if (index === 0) {
+              entry.target.classList.add('animate');
+              entry.target.querySelector('.card-image').classList.add('animate');
+              observer.unobserve(entry.target);
+            } else if (index === 1) {
+              setTimeout(() => {
+                entry.target.classList.add('animate');
+                entry.target.querySelector('.card-image').classList.add('animate');
+                observer.unobserve(entry.target);
+              }, 500);
+            } else {
+              entry.target.classList.add('animate');
+              entry.target.querySelector('.card-image').classList.add('animate');
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+
+      cards.forEach((card) => {
+        observer.observe(card);
+      });
+    }
+
+    observeCards();
+  </script>
+</html>
